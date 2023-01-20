@@ -12,30 +12,29 @@ export default function InputForm() {
                 <h1>Data</h1>
                 <br></br>
                 <Card>
-                    <br></br>
-                    <Form>
-                        <Form.Group as={Row}>
-                            <Form.Label column sm={3}>Year of birth</Form.Label>
+                    <Form className="text-start m-4">
+                        <Form.Group as={Row} className="p-2">
+                            <Form.Label column sm={4}>Year of birth</Form.Label>
                             <Col sm={8}>
                                 <Form.Control type="number" placeholder="Enter year of birth" />
                             </Col>
                         </Form.Group>
-                        <Form.Group as={Row}>
-                            <Form.Label column sm={3}>Gestation Weeks</Form.Label>
+                        <Form.Group as={Row} className="p-2">
+                            <Form.Label column sm={4}>Gestation Weeks</Form.Label>
                             <Col sm={8}>
                                 <Form.Control type="number" placeholder="Enter Gestation weeks" />
                             </Col>
                         </Form.Group>
-                        <Form.Group as={Row}>
-                            <Form.Label column sm={2}>Z-score</Form.Label>
+                        <Form.Group as={Row} className="p-2">
+                            <Form.Label column sm={4}>Z-score</Form.Label>
                             <Col sm={8}>
                                 <Form.Control type="number" placeholder="Enter Zscore" />
                             </Col>
                         </Form.Group>
                         {/* create a form group for Gender */}
-                        <Form.Group as={Row}>
-                            <Form.Label as="legend" column sm={2}>Gender</Form.Label>
-                            <Col sm={5}>
+                        <Form.Group as={Row} className="p-2">
+                            <Form.Label as="legend" column sm={4}>Gender</Form.Label>
+                            <Col sm={4}>
                                 <Form.Check
                                     type="radio"
                                     label="Male"
@@ -43,7 +42,7 @@ export default function InputForm() {
                                     id="radioMale"
                                 />
                             </Col>
-                            <Col sm={5}>
+                            <Col sm={4} >
                                 <Form.Check
                                     type="radio"
                                     label="Female"
@@ -51,11 +50,11 @@ export default function InputForm() {
                                     id="radioFemale"
                                 />
                             </Col>
-                        </Form.Group>
+                        </Form.Group >
                         {/* create a form group for Level 3 */}
-                        <Form.Group as={Row}>
-                            <Form.Label as="legend" column sm={2}>Level 3</Form.Label>
-                            <Col sm={5}>
+                        <Form.Group as={Row} className="p-2">
+                            <Form.Label as="legend" column sm={4}>Level 3</Form.Label>
+                            <Col sm={4}>
                                 <Form.Check
                                     type="radio"
                                     label="Yes"
@@ -63,7 +62,7 @@ export default function InputForm() {
                                     id="level3Yes"
                                 />
                             </Col>
-                            <Col sm={5}>
+                            <Col sm={4}>
                                 <Form.Check
                                     type="radio"
                                     label="No"
@@ -74,9 +73,9 @@ export default function InputForm() {
                             </Col>
                         </Form.Group>
                         {/* create a form group for PROM*/}
-                        <Form.Group as={Row}>
-                            <Form.Label as="legend" column sm={2}>PROM</Form.Label>
-                            <Col sm={5}>
+                        <Form.Group as={Row} className="p-2">
+                            <Form.Label as="legend" column sm={4}>PROM</Form.Label>
+                            <Col sm={4}>
                                 <Form.Check
                                     type="radio"
                                     label="Yes"
@@ -84,7 +83,7 @@ export default function InputForm() {
                                     id="promYes"
                                 />
                             </Col>
-                            <Col sm={5}>
+                            <Col sm={4}>
                                 <Form.Check
                                     type="radio"
                                     label="No"
@@ -95,8 +94,8 @@ export default function InputForm() {
                             </Col>
                         </Form.Group>
                         {/* create a form group for Chorioamnionitis */}
-                        <Form.Group as={Row}>
-                            <Form.Label as="legend" column sm={3}>Chorioamnionitis</Form.Label>
+                        <Form.Group as={Row} className="p-2">
+                            <Form.Label as="legend" column sm={4}>Chorioamnionitis</Form.Label>
                             <Col sm={4}>
                                 <Form.Check
                                     type="radio"
@@ -116,9 +115,9 @@ export default function InputForm() {
                             </Col>
                         </Form.Group>
                         {/* create a form group for Maternal Antenatal Steroids*/}
-                        <Form.Group as={Row}>
-                            <Form.Label as="legend" column sm={2}>Maternal Antenatal Steroids</Form.Label>
-                            <Col sm={3}>
+                        <Form.Group as={Row} className="p-2">
+                            <Form.Label as="legend" column sm={4}>Maternal Antenatal Steroids</Form.Label>
+                            <Col sm={2}>
                                 <Form.Check
                                     type="radio"
                                     label="No Treatment"
@@ -126,7 +125,7 @@ export default function InputForm() {
                                     id="MaternalAntenatalSteroidsNT"
                                 />
                             </Col>
-                            <Col sm={3}>
+                            <Col sm={2}>
                                 <Form.Check
                                     type="radio"
                                     label="Incomplete Treatment"
@@ -134,7 +133,7 @@ export default function InputForm() {
                                     id="MaternalAntenatalSteroidsIT"
                                 />
                             </Col>
-                            <Col sm={3}>
+                            <Col sm={2}>
                                 <Form.Check
                                     type="radio"
                                     label="Completed Treatment"
@@ -145,9 +144,9 @@ export default function InputForm() {
                             </Col>
                         </Form.Group>
                         {/* create a form group for Congenital Anomaly  */}
-                        <Form.Group as={Row}>
-                            <Form.Label as="legend" column sm={2}>Congenital Anomaly</Form.Label>
-                            <Col sm={5}>
+                        <Form.Group as={Row} className="p-2">
+                            <Form.Label as="legend" column sm={4}>Congenital Anomaly</Form.Label>
+                            <Col sm={4}>
                                 <Form.Check
                                     type="radio"
                                     label="Yes"
@@ -155,7 +154,7 @@ export default function InputForm() {
                                     id="CongenitalAnomalyYes"
                                 />
                             </Col>
-                            <Col sm={5}>
+                            <Col sm={4}>
                                 <Form.Check
                                     type="radio"
                                     label="No"
@@ -166,9 +165,9 @@ export default function InputForm() {
                             </Col>
                         </Form.Group>
                         {/* create a form group for Multiple Births */}
-                        <Form.Group as={Row}>
-                            <Form.Label as="legend" column sm={2}>Multiple Births</Form.Label>
-                            <Col sm={5}>
+                        <Form.Group as={Row} className="p-2">
+                            <Form.Label as="legend" column sm={4}>Multiple Births</Form.Label>
+                            <Col sm={4}>
                                 <Form.Check
                                     type="radio"
                                     label="Yes"
@@ -176,7 +175,7 @@ export default function InputForm() {
                                     id="MultipleBirthsYes"
                                 />
                             </Col>
-                            <Col sm={5}>
+                            <Col sm={4}>
                                 <Form.Check
                                     type="radio"
                                     label="No"
